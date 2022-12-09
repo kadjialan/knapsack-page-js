@@ -1,18 +1,17 @@
-# CV
+# knapsack
 
-This project is named cv.
+This project is named knapsack.
 
 ## APP
 
-![avatar](asserts/styles/images/avatar.jpg)
+![knapsack](asserts/styles/images/knap.png)
 
 ## ABOUT
 
-This page give information about Jane Doe cv. mainly, here
-adresses,
-here skills and languages in a decreasing order displayed as
-progresse bars. Some informations about here academic path can
-as well be gotten from the page.
+This page is built for interaction with the user. it enables
+the user to input some items in a bag. The weight of  the items
+are automatically sum inorder not to exceed the maximum weight of the bag    
+
 
 ## Built With
 
@@ -24,14 +23,14 @@ as well be gotten from the page.
 
 - To get a local copy up and running follow these simple example steps.
 - Clone this repository with
-`https://github.com/kadjialan/cvtemplate-page-html` using your terminal.
+`https://github.com/kadjialan/knapsack-page-js` using your terminal.
 - Change to the project directory by entering: cd wedding in the terminal.
 
 ## Command-line steps
 
-- $ git clone `$ https://github.com/kadjialan/cvtemplate-page-html`
-- $ `cd cv`
-- $ `git checkout feature/readme`
+- $ git clone `$ https://github.com/kadjialan/knapsack-page-js`
+- $ `cd knapsack`
+- $ `git checkout feature/design`
 
 ## Start App
 
@@ -43,11 +42,12 @@ Knowledge about:
 
 - HTML
 - CSS
+- JS
 - Google Chrome
 
 ## Live Site
 
-[Link]( https://kadjialan.github.io/cvtemplate-page-html/)
+[Link]( https://kadjialan.github.io/knapsack-page-js/)
 
 ## Author
 
@@ -59,7 +59,7 @@ Knowledge about:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/kadjialan/cvtemplate-page-html/issues).
+Feel free to check the [issues page](https://github.com/kadjialan/knapsack-page-js/issues).
 
 ## Show your support
 
