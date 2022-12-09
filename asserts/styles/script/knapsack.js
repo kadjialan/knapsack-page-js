@@ -1,11 +1,10 @@
-let addButton = document.querySelector('.bt1')
-let maxweight = document.querySelector('.weight')
-let holder = document.getElementById('knapsack-bag')
-let sum = document.getElementById('total-sum')
-let selectOptions = document.getElementsByTagName('select')
-let doneButton = document.querySelector('.bt2')
-let resetButton = document.querySelector('.bt3')
-let count;
+const addButton = document.querySelector('.bt1')
+const maxweight = document.querySelector('.weight')
+const holder = document.getElementById('knapsack-bag')
+const sum = document.getElementById('total-sum')
+const selectOptions = document.getElementsByTagName('select')
+const doneButton = document.querySelector('.bt2')
+const resetButton = document.querySelector('.bt3')
 let sumOfWeights = 0
 let sumOfValue = 0
 let itemBox = [
@@ -19,21 +18,23 @@ let itemBox = [
   { name: 'axe', weight: 7, value: 12 },
   { name: 'hammer', weight: 5, value: 15 }
 ]
+let count
 
 resetButton.onclick = function reset () {
     window.location.reload();
 }
 
 doneButton.onclick = function dataCollector () {
-    count = 0;
+   let count = 0;
     let inputVal = maxweight.value;
 
 
     addButton.addEventListener('click', () => {
         for (let i = 0; i < selectOptions.length; i++) {
             let currrentOption = selectOptions[i]
-            console.log(count)
-            sumOfWeights += itemBox[count].weight;
+            /* console.log(count) */
+
+            sumOfWeights += itemBox[count].weight
             sumOfValue += itemBox[count].value
 
             if (sumOfWeights <= inputVal && count <= itemBox.length) {
