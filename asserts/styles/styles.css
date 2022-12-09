@@ -36,7 +36,7 @@ input {
 .bt3 {
   width: 60px;
   height: 4vh;
-  background-color: #ff0000cc;
+  background-color: #f00c;
   border-radius: 50%;
   margin-top: 10px;
   border: 1px solid red;
@@ -49,7 +49,7 @@ select {
   height: 7vh;
 }
 
-#knapsackBag {
+#knapsack_bag {
   margin-top: 20px;
   width: 240px;
   min-height: 50px;
@@ -66,11 +66,10 @@ select {
   margin-top: 20px;
 }
 
-#totalSum {
+#total_sum {
   padding-left: 20px;
   width: 120px;
   min-height: 7vh;
-  border: 1px solid black;
   background-color: aliceblue;
   border: 1px solid aliceblue;
 }
