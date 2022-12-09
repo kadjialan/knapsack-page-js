@@ -12,7 +12,6 @@ This page is built for interaction with the user. it enables
 the user to input some items in a bag. The weight of  the items
 are automatically sum inorder not to exceed the maximum weight of the bag    
 
-
 ## Built With
 
 - HTML
