@@ -7,7 +7,7 @@ const doneButton = document.querySelector('.bt2')
 const resetButton = document.querySelector('.bt3')
 let sumOfWeights = 0
 let sumOfValue = 0
-let itemBox = [
+const itemBox = [
   { name: 'cement', weight: 50, value: 35 },
   { name: 'stones', weight: 60, value: 13 },
   { name: 'sand', weight: 100, value: 12 },
@@ -20,17 +20,17 @@ let itemBox = [
 ]
 let count
 
-resetButton.onclick = function reset() {
-  window.location.reload();
+resetButton.onclick = function reset () {
+  window.location.reload()
 }
 
-doneButton.onclick = function dataCollector() {
-    let count = 0;
+doneButton.onclick = function dataCollector () {
+    let count = 0
     let inputVal = maxweight.value;
 
 addButton.addEventListener('click', () => {
   for (let i = 0; i < selectOptions.length; i++) {
-    let currrentOption = selectOptions[i]
+    const currrentOption = selectOptions[i]
 
     sumOfWeights += itemBox[count].weight
     sumOfValue += itemBox[count].value
@@ -39,14 +39,13 @@ addButton.addEventListener('click', () => {
     console.log(sumOfWeights)
     holder.innerHTML += `<h4>Item:${currrentOption.value} , weight:${itemBox[count].weight}, value:${itemBox[count].value}<h4>`
     sum.innerHTML = `<p>weigt: ${sumOfWeights}</p> <p>value: ${sumOfValue}</p> `
-
     }
-     else {
-    alert(`maximum weight of ${inputVal}`)
-    addButton.disabled = true
-     }
-    count++
-  }
-})
+      else {
+        alert(`maximum weight of ${inputVal}`)
+        addButton.disabled = true
+      }
+      count++
+    }
+  })
   doneButton.disabled = true
 }
