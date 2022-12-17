@@ -24,10 +24,10 @@ resetButton.onclick = function reset () {
 }
 
 doneButton.onclick = function dataCollector () {
-    let count = 0
-    const inputVal = maxweight.value
+  let count = 0
+  const inputVal = maxweight.value
 
-addButton.addEventListener('click', () => {
+  addButton.addEventListener('click', () => {
     for (let i = 0; i < selectOptions.length; i++) {
       const currrentOption = selectOptions[i]
 
