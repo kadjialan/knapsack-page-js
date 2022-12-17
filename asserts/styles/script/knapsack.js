@@ -18,7 +18,6 @@ const itemBox = [
   { name: 'axe', weight: 7, value: 12 },
   { name: 'hammer', weight: 5, value: 15 }
 ]
-let count
 
 resetButton.onclick = function reset () {
   window.location.reload()
@@ -26,7 +25,7 @@ resetButton.onclick = function reset () {
 
 doneButton.onclick = function dataCollector () {
     let count = 0
-    let inputVal = maxweight.value;
+    const inputVal = maxweight.value
 
 addButton.addEventListener('click', () => {
   for (let i = 0; i < selectOptions.length; i++) {
@@ -39,8 +38,7 @@ addButton.addEventListener('click', () => {
     console.log(sumOfWeights)
     holder.innerHTML += `<h4>Item:${currrentOption.value} , weight:${itemBox[count].weight}, value:${itemBox[count].value}<h4>`
     sum.innerHTML = `<p>weigt: ${sumOfWeights}</p> <p>value: ${sumOfValue}</p> `
-    }
-      else {
+    }else {
         alert(`maximum weight of ${inputVal}`)
         addButton.disabled = true
       }
