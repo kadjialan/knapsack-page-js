@@ -20,19 +20,17 @@ let itemBox = [
 ]
 let count
 
-resetButton.onclick = function reset () {
-    window.location.reload();
+resetButton.onclick = function reset() {
+  window.location.reload();
 }
 
-doneButton.onclick = function dataCollector () {
-   let count = 0;
+doneButton.onclick = function dataCollector() {
+    let count = 0;
     let inputVal = maxweight.value;
-
 
     addButton.addEventListener('click', () => {
         for (let i = 0; i < selectOptions.length; i++) {
             let currrentOption = selectOptions[i]
-            /* console.log(count) */
 
             sumOfWeights += itemBox[count].weight
             sumOfValue += itemBox[count].value
@@ -52,3 +50,5 @@ doneButton.onclick = function dataCollector () {
     });
     doneButton.disabled = true;
 }
+
+
