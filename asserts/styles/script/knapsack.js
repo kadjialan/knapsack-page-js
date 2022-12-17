@@ -28,17 +28,17 @@ doneButton.onclick = function dataCollector () {
     const inputVal = maxweight.value
 
 addButton.addEventListener('click', () => {
-  for (let i = 0; i < selectOptions.length; i++) {
-    const currrentOption = selectOptions[i]
+    for (let i = 0; i < selectOptions.length; i++) {
+      const currrentOption = selectOptions[i]
 
-    sumOfWeights += itemBox[count].weight
-    sumOfValue += itemBox[count].value
+      sumOfWeights += itemBox[count].weight
+      sumOfValue += itemBox[count].value
 
-    if (sumOfWeights <= inputVal && count <= itemBox.length) {
-    console.log(sumOfWeights)
-    holder.innerHTML += `<h4>Item:${currrentOption.value} , weight:${itemBox[count].weight}, value:${itemBox[count].value}<h4>`
-    sum.innerHTML = `<p>weigt: ${sumOfWeights}</p> <p>value: ${sumOfValue}</p> `
-    }else {
+      if (sumOfWeights <= inputVal && count <= itemBox.length) {
+        console.log(sumOfWeights)
+        holder.innerHTML += `<h4>Item:${currrentOption.value} , weight:${itemBox[count].weight}, value:${itemBox[count].value}<h4>`
+        sum.innerHTML = `<p>weigt: ${sumOfWeights}</p> <p>value: ${sumOfValue}</p> `
+      } else {
         alert(`maximum weight of ${inputVal}`)
         addButton.disabled = true
       }
